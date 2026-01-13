@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>FormReportView</class>
- <widget class="QWidget" name="FormReportView">
+ <class>formreportview</class>
+ <widget class="QWidget" name="formreportview">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>789</width>
-    <height>555</height>
+    <width>685</width>
+    <height>464</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,13 +22,13 @@
      <property name="sizeHint" stdset="0">
       <size>
        <width>20</width>
-       <height>67</height>
+       <height>36</height>
       </size>
      </property>
     </spacer>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
      <item>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
@@ -52,7 +52,7 @@
         </spacer>
        </item>
        <item>
-        <widget class="QListWidget" name="listWidget"/>
+        <widget class="QListWidget" name="activityList"/>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout">
@@ -232,14 +232,59 @@
         </widget>
        </item>
        <item>
-        <widget class="QTableView" name="tableView"/>
+        <widget class="QTableWidget" name="applyTable">
+         <column>
+          <property name="text">
+           <string>活动 ID</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>学生 ID</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>报名时间</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>状态</string>
+          </property>
+         </column>
+        </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_5">
+        <widget class="QLabel" name="labelStatus">
          <property name="text">
-          <string>状态Label（候补/报名数）</string>
+          <string>「已报名：0 | 候补：0」</string>
          </property>
         </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnExport">
+           <property name="text">
+            <string>btnExport</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </item>
@@ -253,7 +298,7 @@
      <property name="sizeHint" stdset="0">
       <size>
        <width>20</width>
-       <height>66</height>
+       <height>34</height>
       </size>
      </property>
     </spacer>

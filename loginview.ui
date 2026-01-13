@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>LoginView</class>
- <widget class="QWidget" name="LoginView">
+ <class>loginview</class>
+ <widget class="QWidget" name="loginview">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>458</width>
-    <height>327</height>
+    <width>498</width>
+    <height>374</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>登录</string>
+   <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_2">
+  <layout class="QVBoxLayout" name="verticalLayout_3">
    <item>
     <spacer name="verticalSpacer">
      <property name="orientation">
@@ -22,7 +22,7 @@
      <property name="sizeHint" stdset="0">
       <size>
        <width>20</width>
-       <height>46</height>
+       <height>69</height>
       </size>
      </property>
     </spacer>
@@ -51,15 +51,15 @@
      <property name="sizeHint" stdset="0">
       <size>
        <width>20</width>
-       <height>47</height>
+       <height>68</height>
       </size>
      </property>
     </spacer>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
      <item>
-      <spacer name="horizontalSpacer">
+      <spacer name="horizontalSpacer_5">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -72,39 +72,39 @@
       </spacer>
      </item>
      <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout">
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
          <item>
-          <widget class="QLabel" name="label_2">
+          <widget class="QLabel" name="label_4">
            <property name="text">
             <string>用户名：</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="EditUsername"/>
+          <widget class="QLineEdit" name="lineEditUser"/>
          </item>
         </layout>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
          <item>
-          <widget class="QLabel" name="label_3">
+          <widget class="QLabel" name="label_5">
            <property name="text">
             <string>密  码：</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="EditPassword"/>
+          <widget class="QLineEdit" name="lineEditPwd"/>
          </item>
         </layout>
        </item>
       </layout>
      </item>
      <item>
-      <spacer name="horizontalSpacer_2">
+      <spacer name="horizontalSpacer_6">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -119,12 +119,12 @@
     </layout>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_5"/>
+    <layout class="QHBoxLayout" name="horizontalLayout_10"/>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
      <item>
-      <spacer name="horizontalSpacer_3">
+      <spacer name="horizontalSpacer_7">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -137,21 +137,21 @@
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="btnRegister_2">
        <property name="text">
         <string>注册</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btnlogin">
+      <widget class="QPushButton" name="btnlogin_2">
        <property name="text">
         <string>登录</string>
        </property>
       </widget>
      </item>
      <item>
-      <spacer name="horizontalSpacer_4">
+      <spacer name="horizontalSpacer_8">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -173,7 +173,7 @@
      <property name="sizeHint" stdset="0">
       <size>
        <width>20</width>
-       <height>46</height>
+       <height>69</height>
       </size>
      </property>
     </spacer>
