@@ -1,7 +1,10 @@
 #include "exportdialog.h"
 #include "ui_exportdialog.h"
+#include "workerthread.h"
+#include <QMessageBox>
+#include <QFileDialog>
 
-ExportDialog::ExportDialog(QWidget *parent) :
+ExportDialog::ExportDialog(int activityId, QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ExportDialog),
     m_activityId(activityId),

@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>685</width>
-    <height>464</height>
+    <width>632</width>
+    <height>354</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>活动页面</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_4">
    <item>
@@ -52,7 +52,7 @@
         </spacer>
        </item>
        <item>
-        <widget class="QListWidget" name="listWidget"/>
+        <widget class="QListWidget" name="activityList"/>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout">
@@ -280,7 +280,7 @@
          <item>
           <widget class="QPushButton" name="btnExport">
            <property name="text">
-            <string>btnExport</string>
+            <string>导出</string>
            </property>
           </widget>
          </item>
@@ -302,6 +302,30 @@
       </size>
      </property>
     </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnLogout">
+       <property name="text">
+        <string>退出</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </item>
    <item>
     <widget class="QLabel" name="label_6">

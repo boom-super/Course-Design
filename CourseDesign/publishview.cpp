@@ -1,14 +1,17 @@
 #include "publishview.h"
 #include "ui_publishview.h"
+#include "databasemanager.h"
+#include <QMessageBox>
 
-publishview::publishview(QWidget *parent) :
-    QWidget(parent),
+publishview::publishview(const QString& organizer, QWidget *parent) :
+    QDialog(parent),
     ui(new Ui::publishview),
     m_organizer(organizer)
 
 {
     ui->setupUi(this);
-    setWindowTitle("发布新活动");
+    this->setWindowTitle("发布新活动");
+    this->setWindowFlags(Qt::Dialog | Qt::WindowCloseButtonHint);
 }
 
 publishview::~publishview()
@@ -34,3 +37,9 @@ void publishview::on_btnSubmit_clicked() {
         QMessageBox::critical(this, "失败", "活动发布失败！");
     }
 }
+
+void publishview::on_btnCancel_clicked()
+{
+    this->reject();
+}
+

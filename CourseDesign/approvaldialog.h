@@ -1,14 +1,15 @@
 #ifndef APPROVALDIALOG_H
 #define APPROVALDIALOG_H
 
-#include <QWidget>
+#include <QDialog>
+#include <QString>
 #include <QListWidgetItem>
 
 namespace Ui {
 class approvaldialog;
 }
 
-class approvaldialog : public QWidget
+class approvaldialog : public QDialog
 {
     Q_OBJECT
 
@@ -23,8 +24,10 @@ private slots:
 
     void loadPendingActivities();
 
+    void on_pendingList_currentItemChanged(QListWidgetItem *current, QListWidgetItem *previous);
 private:
     Ui::approvaldialog *ui;
+    int m_selectedActivityId;
 };
 
 #endif // APPROVALDIALOG_H

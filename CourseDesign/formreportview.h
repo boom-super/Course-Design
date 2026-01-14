@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QMessageBox>
+#include <QTableWidgetItem>
 #include "databasemanager.h"
 #include "approvaldialog.h"
 #include "exportdialog.h"
@@ -18,7 +19,7 @@ class formreportview : public QWidget
     Q_OBJECT
 
 public:
-    explicit formreportview(QWidget *parent = nullptr);
+    explicit formreportview(const QString& username, const QString& role, QWidget *parent = nullptr);
     ~formreportview();
 
 private slots:
@@ -33,8 +34,12 @@ private slots:
     void on_btnCheckConflict_clicked();
 
     void on_activityList_currentItemChanged(QListWidgetItem *current, QListWidgetItem *previous); // 选中活动变化
+
     void on_btnExport_clicked();     // 导出CSV
+
     void onConflictCheckFinished(bool success, const QString& msg); // 冲突检测回调
+
+    void on_btnLogout_clicked();
 
 private:
     Ui::formreportview *ui;

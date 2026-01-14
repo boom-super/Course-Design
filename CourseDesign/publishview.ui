@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>711</width>
-    <height>451</height>
+    <width>588</width>
+    <height>275</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>发布页面</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
@@ -117,16 +117,16 @@
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="btnSubmit">
        <property name="text">
         <string>提交</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QDialogButtonBox" name="buttonBox">
-       <property name="standardButtons">
-        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+      <widget class="QPushButton" name="btnCanel">
+       <property name="text">
+        <string>取消</string>
        </property>
       </widget>
      </item>

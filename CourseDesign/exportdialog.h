@@ -15,7 +15,7 @@ class ExportDialog : public QWidget
     Q_OBJECT
 
 public:
-    explicit ExportDialog(QWidget *parent = nullptr);
+    explicit ExportDialog(int activityId, QWidget *parent = nullptr);
     ~ExportDialog();
 
 private slots:

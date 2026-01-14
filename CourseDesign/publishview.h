@@ -1,7 +1,8 @@
 #ifndef PUBLISHVIEW_H
 #define PUBLISHVIEW_H
 
-#include <QWidget>
+#include <QDialog>
+#include <QString>
 #include <QMessageBox>
 #include "databasemanager.h"
 
@@ -9,20 +10,21 @@ namespace Ui {
 class publishview;
 }
 
-class publishview : public QWidget
+class publishview : public QDialog
 {
     Q_OBJECT
-
 public:
-    explicit publishview(QWidget *parent = nullptr);
+    // 声明：必须带 const QString& organizer 参数
+    explicit publishview(const QString& organizer, QWidget *parent = nullptr);
     ~publishview();
 
 private slots:
-    void on_btnSubmit_clicked(); // 提交发布活动
+    void on_btnSubmit_clicked();
+    void on_btnCancel_clicked();
 
 private:
     Ui::publishview *ui;
-    QString m_organizer; // 发起人用户名
+    QString m_organizer; // 存储发起人名称
 };
 
 #endif // PUBLISHVIEW_H
